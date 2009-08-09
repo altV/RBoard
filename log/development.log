@@ -1,0 +1,2613 @@
+  [4;36;1mSQL (16.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20090801172004)
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20090801172004)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mCREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "header" varchar(255), "body" text, "host_id" integer, "user_id" integer DEFAULT 0, "unregistered_user_name" varchar(255), "times_viewed" integer DEFAULT 0, "post_subject_id" integer, "has_pics" boolean, "has_urls" boolean, "posts_id" integer, "path" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090801172004')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("posts")[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20090801172004)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("posts")[0m
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-02 18:25:36) [GET]
+Rendering template within layouts/board
+Rendering board/index
+Completed in 62ms (View: 62, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-02 18:26:26) [GET]
+Rendering template within layouts/board
+Rendering board/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 18:26:26) [GET]
+
+ActionController::RoutingError (No route matches "/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 18:26:26) [GET]
+
+ActionController::RoutingError (No route matches "/nav.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 18:26:26) [GET]
+
+ActionController::RoutingError (No route matches "/request.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-02 18:28:21) [GET]
+Rendering template within layouts/board
+Rendering board/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-02 18:32:57) [GET]
+Rendering board/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-02 18:33:13) [GET]
+Rendering board/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-02 18:33:14) [GET]
+Rendering board/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-02 18:33:23) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Completed in 110ms (View: 110, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 18:33:23) [GET]
+
+ActionController::RoutingError (No route matches "/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 18:33:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/1board.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 18:33:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/subline.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-02 18:33:24) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 18:33:24) [GET]
+
+ActionController::RoutingError (No route matches "/main.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 18:33:25) [GET]
+
+ActionController::RoutingError (No route matches "/images/1board.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 18:33:25) [GET]
+
+ActionController::RoutingError (No route matches "/images/subline.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-02 18:33:41) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-02 22:38:14) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-02 22:38:15) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-02 22:38:32) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-02 22:45:31) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+
+ActionView::TemplateError (Missing template board/_footer.erb in view path app/views) on line #10 of app/views/layouts/board_full.erb:
+7: 
+8: <%= yield   %>
+9: 
+10: <%= render :partial => "board/footer" %>
+
+    app/views/layouts/board_full.erb:10
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-02 22:46:07) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+
+ActionView::TemplateError (Missing template board/_footer.erb in view path app/views) on line #10 of app/views/layouts/board_full.html.erb:
+7: 
+8: <%= yield   %>
+9: 
+10: <%= render :partial => "board/footer" %>
+
+    app/views/layouts/board_full.html.erb:10
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-02 22:46:26) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+
+ActionView::TemplateError (Missing template board/_footer.erb in view path app/views) on line #10 of app/views/layouts/board_full.html.erb:
+7: 
+8: <%= yield   %>
+9: 
+10: <%= render :partial => "board/footer" %>
+
+    app/views/layouts/board_full.html.erb:10
+
+Rendered rescues/_trace (359.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-02 22:46:43) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-02 22:47:28) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer (16.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-02 22:48:37) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-02 22:55:45) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (15.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 22:57:08) [GET]
+
+ActionController::RoutingError (No route matches "/board.%D1%82%D1%83%D1%86" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#new (for 127.0.0.1 at 2009-08-02 22:57:13) [GET]
+Rendering template within layouts/board_full
+Rendering board/new
+Rendered board/_footer_full (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/board/new]
+
+
+Processing BoardController#new (for 127.0.0.1 at 2009-08-02 22:59:21) [GET]
+Rendering template within layouts/board_full
+Rendering board/new
+Rendered board/_footer_full (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/board/new]
+
+
+Processing BoardController#new (for 127.0.0.1 at 2009-08-02 22:59:36) [GET]
+Rendering template within layouts/board_full
+Rendering board/new
+Rendered board/_footer_full (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board/new]
+
+
+Processing BoardController#new (for 127.0.0.1 at 2009-08-02 22:59:39) [GET]
+Rendering template within layouts/board_full
+Rendering board/new
+Rendered board/_footer_full (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/board/new]
+
+
+Processing BoardController#new (for 127.0.0.1 at 2009-08-02 22:59:51) [GET]
+Rendering template within layouts/board_full
+Rendering board/new
+Rendered board/_footer_full (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/board/new]
+
+
+Processing BoardController#new (for 127.0.0.1 at 2009-08-02 23:04:38) [GET]
+Rendering template within layouts/board_full
+Rendering board/new
+Rendered board/_footer_full (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/board/new]
+
+
+Processing BoardController#new (for 127.0.0.1 at 2009-08-02 23:04:40) [GET]
+Rendering template within layouts/board_full
+Rendering board/new
+Rendered board/_footer_full (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board/new]
+
+
+Processing BoardController#new (for 127.0.0.1 at 2009-08-02 23:04:41) [GET]
+Rendering template within layouts/board_full
+Rendering board/new
+Rendered board/_footer_full (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board/new]
+
+
+Processing BoardController#new (for 127.0.0.1 at 2009-08-02 23:07:23) [GET]
+Rendering template within layouts/board_full
+Rendering board/new
+Rendered board/_footer_full (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board/new]
+
+
+Processing BoardController#new (for 127.0.0.1 at 2009-08-02 23:07:24) [GET]
+Rendering template within layouts/board_full
+Rendering board/new
+Rendered board/_footer_full (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board/new]
+
+
+Processing BoardController#new (for 127.0.0.1 at 2009-08-02 23:23:30) [GET]
+Rendering board/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board/new]
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:31) [GET]
+  Parameters: {"id"=>"smile"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:31) [GET]
+  Parameters: {"id"=>"bigsmile"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:31) [GET]
+  Parameters: {"id"=>"frown"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:31) [GET]
+  Parameters: {"id"=>"wink"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:31) [GET]
+  Parameters: {"id"=>"lol"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:31) [GET]
+  Parameters: {"id"=>"smirk"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:31) [GET]
+  Parameters: {"id"=>"smoke"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:31) [GET]
+  Parameters: {"id"=>"no"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:31) [GET]
+  Parameters: {"id"=>"yes"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:31) [GET]
+  Parameters: {"id"=>"bored"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:32) [GET]
+  Parameters: {"id"=>"crazy"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:32) [GET]
+  Parameters: {"id"=>"mad"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:32) [GET]
+  Parameters: {"id"=>"draznit"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:32) [GET]
+  Parameters: {"id"=>"redface"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:32) [GET]
+  Parameters: {"id"=>"rolleyes"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:32) [GET]
+  Parameters: {"id"=>"figa"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:32) [GET]
+  Parameters: {"id"=>"devil"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:32) [GET]
+  Parameters: {"id"=>"iq"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 23:23:32) [GET]
+
+ActionController::RoutingError (No route matches "/postcheck.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 23:23:32) [GET]
+
+ActionController::RoutingError (No route matches "/qecode2.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#new (for 127.0.0.1 at 2009-08-02 23:23:38) [GET]
+  Parameters: {"login"=>"logoff", "key"=>"26571"}
+Rendering board/new
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/board/new?login=logoff&key=26571]
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:38) [GET]
+  Parameters: {"id"=>"smile"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:39) [GET]
+  Parameters: {"id"=>"wink"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:39) [GET]
+  Parameters: {"id"=>"bigsmile"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:39) [GET]
+  Parameters: {"id"=>"frown"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:39) [GET]
+  Parameters: {"id"=>"lol"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:39) [GET]
+  Parameters: {"id"=>"no"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:39) [GET]
+  Parameters: {"id"=>"smirk"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:39) [GET]
+  Parameters: {"id"=>"smoke"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:39) [GET]
+  Parameters: {"id"=>"yes"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:39) [GET]
+  Parameters: {"id"=>"mad"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:39) [GET]
+  Parameters: {"id"=>"bored"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:39) [GET]
+  Parameters: {"id"=>"crazy"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:39) [GET]
+  Parameters: {"id"=>"draznit"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:40) [GET]
+  Parameters: {"id"=>"figa"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:40) [GET]
+  Parameters: {"id"=>"redface"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:40) [GET]
+  Parameters: {"id"=>"rolleyes"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:40) [GET]
+  Parameters: {"id"=>"devil"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:40) [GET]
+  Parameters: {"id"=>"iq"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 23:23:40) [GET]
+
+ActionController::RoutingError (No route matches "/postcheck.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 23:23:40) [GET]
+
+ActionController::RoutingError (No route matches "/qecode2.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#new (for 127.0.0.1 at 2009-08-02 23:23:41) [GET]
+  Parameters: {"login"=>"logoff", "key"=>"26571"}
+Rendering board/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board/new?login=logoff&key=26571]
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:41) [GET]
+  Parameters: {"id"=>"smile"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:41) [GET]
+  Parameters: {"id"=>"wink"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:41) [GET]
+  Parameters: {"id"=>"bigsmile"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:41) [GET]
+  Parameters: {"id"=>"frown"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:42) [GET]
+  Parameters: {"id"=>"lol"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:42) [GET]
+  Parameters: {"id"=>"no"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:42) [GET]
+  Parameters: {"id"=>"smirk"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:42) [GET]
+  Parameters: {"id"=>"smoke"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:42) [GET]
+  Parameters: {"id"=>"yes"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:42) [GET]
+  Parameters: {"id"=>"mad"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:42) [GET]
+  Parameters: {"id"=>"bored"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:42) [GET]
+  Parameters: {"id"=>"crazy"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:42) [GET]
+  Parameters: {"id"=>"draznit"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:42) [GET]
+  Parameters: {"id"=>"figa"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:43) [GET]
+  Parameters: {"id"=>"redface"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:43) [GET]
+  Parameters: {"id"=>"rolleyes"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:43) [GET]
+  Parameters: {"id"=>"devil"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:43) [GET]
+  Parameters: {"id"=>"iq"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 23:23:43) [GET]
+
+ActionController::RoutingError (No route matches "/postcheck.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 23:23:43) [GET]
+
+ActionController::RoutingError (No route matches "/qecode2.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#new (for 127.0.0.1 at 2009-08-02 23:23:44) [GET]
+  Parameters: {"login"=>"logoff", "key"=>"26571"}
+Rendering board/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board/new?login=logoff&key=26571]
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:44) [GET]
+  Parameters: {"id"=>"smile"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:44) [GET]
+  Parameters: {"id"=>"wink"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:44) [GET]
+  Parameters: {"id"=>"bigsmile"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:44) [GET]
+  Parameters: {"id"=>"frown"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:44) [GET]
+  Parameters: {"id"=>"lol"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:45) [GET]
+  Parameters: {"id"=>"no"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:45) [GET]
+  Parameters: {"id"=>"smirk"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:45) [GET]
+  Parameters: {"id"=>"smoke"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:45) [GET]
+  Parameters: {"id"=>"yes"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:45) [GET]
+  Parameters: {"id"=>"mad"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:45) [GET]
+  Parameters: {"id"=>"bored"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:45) [GET]
+  Parameters: {"id"=>"crazy"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:45) [GET]
+  Parameters: {"id"=>"draznit"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:45) [GET]
+  Parameters: {"id"=>"figa"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:45) [GET]
+  Parameters: {"id"=>"redface"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:45) [GET]
+  Parameters: {"id"=>"rolleyes"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:45) [GET]
+  Parameters: {"id"=>"devil"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:45) [GET]
+  Parameters: {"id"=>"iq"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 23:23:46) [GET]
+
+ActionController::RoutingError (No route matches "/postcheck.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 23:23:46) [GET]
+
+ActionController::RoutingError (No route matches "/qecode2.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#new (for 127.0.0.1 at 2009-08-02 23:23:47) [GET]
+  Parameters: {"login"=>"logoff", "key"=>"26571"}
+Rendering board/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board/new?login=logoff&key=26571]
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:47) [GET]
+  Parameters: {"id"=>"smile"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:47) [GET]
+  Parameters: {"id"=>"wink"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:47) [GET]
+  Parameters: {"id"=>"bigsmile"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:47) [GET]
+  Parameters: {"id"=>"frown"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:47) [GET]
+  Parameters: {"id"=>"lol"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:47) [GET]
+  Parameters: {"id"=>"no"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:47) [GET]
+  Parameters: {"id"=>"smirk"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:47) [GET]
+  Parameters: {"id"=>"smoke"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:48) [GET]
+  Parameters: {"id"=>"yes"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:48) [GET]
+  Parameters: {"id"=>"mad"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:48) [GET]
+  Parameters: {"id"=>"bored"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:48) [GET]
+  Parameters: {"id"=>"crazy"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:48) [GET]
+  Parameters: {"id"=>"draznit"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:48) [GET]
+  Parameters: {"id"=>"figa"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:48) [GET]
+  Parameters: {"id"=>"redface"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:48) [GET]
+  Parameters: {"id"=>"rolleyes"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:49) [GET]
+  Parameters: {"id"=>"devil"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:49) [GET]
+  Parameters: {"id"=>"iq"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 23:23:49) [GET]
+
+ActionController::RoutingError (No route matches "/postcheck.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 23:23:49) [GET]
+
+ActionController::RoutingError (No route matches "/qecode2.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#new (for 127.0.0.1 at 2009-08-02 23:23:50) [GET]
+  Parameters: {"login"=>"logoff", "key"=>"26571"}
+Rendering board/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board/new?login=logoff&key=26571]
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:51) [GET]
+  Parameters: {"id"=>"smile"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:51) [GET]
+  Parameters: {"id"=>"wink"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:51) [GET]
+  Parameters: {"id"=>"bigsmile"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:51) [GET]
+  Parameters: {"id"=>"frown"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:51) [GET]
+  Parameters: {"id"=>"lol"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:51) [GET]
+  Parameters: {"id"=>"no"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:51) [GET]
+  Parameters: {"id"=>"smirk"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:51) [GET]
+  Parameters: {"id"=>"smoke"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:51) [GET]
+  Parameters: {"id"=>"yes"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:52) [GET]
+  Parameters: {"id"=>"mad"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:52) [GET]
+  Parameters: {"id"=>"bored"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:52) [GET]
+  Parameters: {"id"=>"crazy"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:52) [GET]
+  Parameters: {"id"=>"draznit"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:52) [GET]
+  Parameters: {"id"=>"figa"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:52) [GET]
+  Parameters: {"id"=>"redface"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:52) [GET]
+  Parameters: {"id"=>"rolleyes"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:52) [GET]
+  Parameters: {"id"=>"devil"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:23:52) [GET]
+  Parameters: {"id"=>"iq"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 23:23:52) [GET]
+
+ActionController::RoutingError (No route matches "/postcheck.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 23:23:52) [GET]
+
+ActionController::RoutingError (No route matches "/qecode2.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#new (for 127.0.0.1 at 2009-08-02 23:32:53) [GET]
+  Parameters: {"login"=>"logoff", "key"=>"26571"}
+Rendering board/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board/new?login=logoff&key=26571]
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:54) [GET]
+  Parameters: {"id"=>"smile"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:54) [GET]
+  Parameters: {"id"=>"wink"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:54) [GET]
+  Parameters: {"id"=>"bigsmile"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:54) [GET]
+  Parameters: {"id"=>"frown"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:54) [GET]
+  Parameters: {"id"=>"lol"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:54) [GET]
+  Parameters: {"id"=>"no"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:54) [GET]
+  Parameters: {"id"=>"smirk"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:54) [GET]
+  Parameters: {"id"=>"smoke"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:54) [GET]
+  Parameters: {"id"=>"yes"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:54) [GET]
+  Parameters: {"id"=>"mad"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:55) [GET]
+  Parameters: {"id"=>"bored"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:55) [GET]
+  Parameters: {"id"=>"crazy"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:55) [GET]
+  Parameters: {"id"=>"draznit"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:55) [GET]
+  Parameters: {"id"=>"figa"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:55) [GET]
+  Parameters: {"id"=>"redface"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:55) [GET]
+  Parameters: {"id"=>"rolleyes"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:55) [GET]
+  Parameters: {"id"=>"devil"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:55) [GET]
+  Parameters: {"id"=>"iq"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 23:32:55) [GET]
+
+ActionController::RoutingError (No route matches "/postcheck.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 23:32:55) [GET]
+
+ActionController::RoutingError (No route matches "/qecode2.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#new (for 127.0.0.1 at 2009-08-02 23:32:56) [GET]
+  Parameters: {"login"=>"logoff", "key"=>"26571"}
+Rendering board/new
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board/new?login=logoff&key=26571]
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:57) [GET]
+  Parameters: {"id"=>"smile"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:57) [GET]
+  Parameters: {"id"=>"wink"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:57) [GET]
+  Parameters: {"id"=>"bigsmile"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:57) [GET]
+  Parameters: {"id"=>"frown"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:57) [GET]
+  Parameters: {"id"=>"lol"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:57) [GET]
+  Parameters: {"id"=>"no"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:57) [GET]
+  Parameters: {"id"=>"smirk"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:57) [GET]
+  Parameters: {"id"=>"smoke"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:57) [GET]
+  Parameters: {"id"=>"yes"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:57) [GET]
+  Parameters: {"id"=>"mad"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:57) [GET]
+  Parameters: {"id"=>"bored"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:57) [GET]
+  Parameters: {"id"=>"crazy"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:58) [GET]
+  Parameters: {"id"=>"draznit"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:58) [GET]
+  Parameters: {"id"=>"figa"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:58) [GET]
+  Parameters: {"id"=>"redface"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:58) [GET]
+  Parameters: {"id"=>"rolleyes"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:58) [GET]
+  Parameters: {"id"=>"devil"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-02 23:32:58) [GET]
+  Parameters: {"id"=>"iq"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 23:32:58) [GET]
+
+ActionController::RoutingError (No route matches "/postcheck.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-02 23:32:58) [GET]
+
+ActionController::RoutingError (No route matches "/qecode2.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-03 19:20:21) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 141ms (View: 141, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-03 20:07:00) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-03 20:07:18) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-03 21:30:46) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 94ms (View: 78, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-03 21:30:48) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing BoardController#new (for 127.0.0.1 at 2009-08-03 21:31:13) [GET]
+Rendering board/new
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/board/new]
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 21:31:14) [GET]
+  Parameters: {"id"=>"smile"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 21:31:14) [GET]
+  Parameters: {"id"=>"lol"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 21:31:14) [GET]
+  Parameters: {"id"=>"frown"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 21:31:14) [GET]
+  Parameters: {"id"=>"smirk"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 21:31:15) [GET]
+  Parameters: {"id"=>"bigsmile"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 21:31:15) [GET]
+  Parameters: {"id"=>"wink"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-03 21:31:15) [GET]
+
+ActionController::RoutingError (No route matches "/postcheck.js" with {:method=>:get}):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-03 21:31:16) [GET]
+
+ActionController::RoutingError (No route matches "/qecode2.js" with {:method=>:get}):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 21:31:16) [GET]
+  Parameters: {"id"=>"smoke"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 21:31:17) [GET]
+  Parameters: {"id"=>"no"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 21:31:17) [GET]
+  Parameters: {"id"=>"yes"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 21:31:17) [GET]
+  Parameters: {"id"=>"bored"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 21:31:17) [GET]
+  Parameters: {"id"=>"crazy"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 21:31:17) [GET]
+  Parameters: {"id"=>"mad"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 21:31:18) [GET]
+  Parameters: {"id"=>"draznit"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 21:31:19) [GET]
+  Parameters: {"id"=>"redface"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 21:31:19) [GET]
+  Parameters: {"id"=>"rolleyes"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 21:31:19) [GET]
+  Parameters: {"id"=>"figa"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 21:31:19) [GET]
+  Parameters: {"id"=>"devil"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 21:31:19) [GET]
+  Parameters: {"id"=>"iq"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#new (for 127.0.0.1 at 2009-08-03 23:23:57) [GET]
+Rendering board/new
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/board/new]
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 23:23:58) [GET]
+  Parameters: {"id"=>"smile"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 23:23:58) [GET]
+  Parameters: {"id"=>"bigsmile"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 23:23:59) [GET]
+  Parameters: {"id"=>"frown"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 23:24:00) [GET]
+  Parameters: {"id"=>"wink"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 23:24:00) [GET]
+  Parameters: {"id"=>"lol"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 23:24:00) [GET]
+  Parameters: {"id"=>"smirk"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-03 23:24:00) [GET]
+
+ActionController::RoutingError (No route matches "/postcheck.js" with {:method=>:get}):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-08-03 23:24:00) [GET]
+
+ActionController::RoutingError (No route matches "/qecode2.js" with {:method=>:get}):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 23:24:00) [GET]
+  Parameters: {"id"=>"smoke"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 23:24:01) [GET]
+  Parameters: {"id"=>"no"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 23:24:01) [GET]
+  Parameters: {"id"=>"yes"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 23:24:02) [GET]
+  Parameters: {"id"=>"bored"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 23:24:02) [GET]
+  Parameters: {"id"=>"crazy"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 23:24:02) [GET]
+  Parameters: {"id"=>"mad"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 23:24:03) [GET]
+  Parameters: {"id"=>"draznit"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 23:24:03) [GET]
+  Parameters: {"id"=>"redface"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 23:24:03) [GET]
+  Parameters: {"id"=>"rolleyes"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 23:24:03) [GET]
+  Parameters: {"id"=>"figa"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 23:24:04) [GET]
+  Parameters: {"id"=>"devil"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#pic to gif (for 127.0.0.1 at 2009-08-03 23:24:05) [GET]
+  Parameters: {"id"=>"iq"}
+
+ActionController::UnknownAction (No action responded to pic. Actions: index, new, and show):
+  /script\server:3
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  C:/ruby/bin/rdebug-ide:19:in `load'
+  C:/ruby/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-03 23:24:06) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/board/]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-03 23:24:12) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/board/]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-03 23:24:23) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/board/]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-03 23:25:37) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board/]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-03 23:26:03) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board/]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-03 23:26:05) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/board/]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-03 23:27:10) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board/]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-03 23:27:11) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/board/]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-03 23:27:19) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/board/]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-03 23:27:20) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/board/]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-03 23:27:38) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/board/]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-03 23:28:23) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/board/]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-03 23:28:24) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/board/]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-04 01:11:30) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/board/]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-04 01:11:56) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/board/]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-04 01:11:58) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/board/]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-04 01:12:06) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/board/]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-04 01:13:10) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/board/]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-04 01:13:26) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/board/]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-04 01:13:32) [GET]
+Rendering template within layouts/board
+Rendering board/index
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/board/]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-08-09 20:25:33) [GET]
+  [4;36;1mSQL (31.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 485ms (View: 0, DB: 47) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-08-09 20:25:34) [GET]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 218ms (View: 31, DB: 0) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-09 20:29:35) [GET]
+Rendering template within layouts/board
+Rendering board/index
+
+ActionView::TemplateError (Missing template board/__footer.erb in view path app/views) on line #6 of app/views/layouts/board.html.erb:
+3:     <script language="JavaScript" type="text/javascript">function popup(action, value, w, h){wnd=window.open("?"+action+"="+value,"popup","resizable=no,menubars=no,scrollbars=yes,width="+w+",height="+h); }</script><script language="JavaScript" type="text/javascript" src="/nav.js"></script><script language="JavaScript" type="text/javascript" src="/request.js"></script><div class="menu"><A HREF="#5661809">Перейти к ответам</A><A HREF="#Reply">Ответить</A><A HREF="?index#5661809" style="color:red;">На главную страницу</A><a HREF="/xonix/search">Поиск</A><A HREF="?rules">Правила</A><A HREF="?favs">Избранное</A><A HREF="?persmsg">Приват</A><A HREF="?login=logoff&key=26571">Выход</A></div><BR>
+4: <%= yield %>
+5: 
+6:  <%= render :partial => "_footer" %>
+
+    app/views/layouts/board.html.erb:6
+    /script\server:3
+    c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+    c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+    c:/ruby/lib/ruby/gems/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+    C:/ruby/bin/rdebug-ide:19:in `load'
+    C:/ruby/bin/rdebug-ide:19
+
+Rendered rescues/_trace (109.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-09 20:29:57) [GET]
+Rendering template within layouts/board
+Rendering board/index
+Rendered board/_footer (15.0ms)
+Completed in 109ms (View: 109, DB: 0) | 200 OK [http://localhost/board]
+
+
+Processing BoardController#index (for 127.0.0.1 at 2009-08-09 20:30:33) [GET]
+Rendering template within layouts/board_full
+Rendering board/index
+Rendered board/_footer_full (0.0ms)
+Completed in 250ms (View: 235, DB: 0) | 200 OK [http://localhost/board]
