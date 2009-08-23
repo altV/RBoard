@@ -1,1 +1,11 @@
-simple
+<% if @posts.empty?  %>
+<h3>No posts.</h3>
+<% else %>
+<h3>Posts:</h3> <% gw = 0 %>
+  <% for post in @posts %>
+    <% gw = gw + 1 %>
+    <div class=<%="w" if gw % 2 == 0 -%><%="g" if gw % 2 == 1 -%>>
+    <%= render :partial => "board/simple/thread", :locals => {:post => post}%>
+    </div>
+  <% end %>
+<% end %>

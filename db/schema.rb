@@ -9,7 +9,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090801172004) do
+ActiveRecord::Schema.define(:version => 20090822214252) do
+
+  create_table "hosts", :force => true do |t|
+    t.string   "name"
+    t.string   "whois"
+    t.string   "ip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "posts", :force => true do |t|
     t.string   "header"
@@ -21,7 +29,7 @@ ActiveRecord::Schema.define(:version => 20090801172004) do
     t.integer  "post_subject_id"
     t.boolean  "has_pics"
     t.boolean  "has_urls"
-    t.integer  "posts_id"
+    t.integer  "post_id"
     t.string   "path"
     t.datetime "created_at"
     t.datetime "updated_at"

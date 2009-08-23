@@ -1,2 +1,7 @@
-<h1>Board#show</h1>
-<p>Find me in app/views/board/show.html.erb</p>
+<h3><%= @post.header %></h3>
+<%= @post.body %><br/>
+
+<%= render :partial => "board/simple/thread", :locals => {:post => @thread}%>
+
+<%= render :partial => "board/simple/post_form",
+  :locals => {:post => @reply, :form_action => :create} %>

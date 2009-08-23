@@ -1,7 +1,14 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  header: MyString
+  #id: 1
+  header: one
 
 two:
-  header: MyString
+ # id: 2
+  header: two
+
+three:
+ # id: 3
+  header: one-child
+  post: one
