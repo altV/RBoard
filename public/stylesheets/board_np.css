@@ -1,0 +1,26 @@
+/* 
+    Document   : board_np
+    Created on : 23.08.2009, 2:59:00
+    Author     : И ЛЕНЯ
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+body { background-color: #f0f0f0; color: #000000; font-size: 12pt; margin: 0;padding:0;border: 0; font-family: helvetica, Arial, Verdana, sans-serif;}a {text-decoration: none; font-size: 11pt; color: #0000ff;} a:hover { color: #f7941d;} a.visited{color: #0000ff;}table.cl {width: 100%;background-color: #E1E1E1; padding: 8px; border: 0; margin:0; } TD.under {font-family: arial, helvetica, sans-serif;font-size: 7pt;font-weight: bold;vertical-align: top;}
+.underhref {font-size: 7pt;}
+BIG {font-size: 14pt;font-weight: bold;}
+NOBR B {font-size: 12pt;color: #207025;}
+EM {font-size: 9pt;font-style: normal;}
+A EM.e, EM.e {color: #cc0000;font-weight: bold;font-size: 13pt;}
+.cl, .cs {font-size: 8pt}
+div {padding-left: 25px;}
+div.g, div.w {border-top: 1px solid #ccc; padding: 5px 0 2px 10px;padding-left: 10px}div.g {background-color:#E9E9E9;}
+DD DL{margin-left:-15px;}

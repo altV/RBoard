@@ -1,0 +1,11 @@
+<head>
+<%= yield :head %>
+</head>
+<body>
+
+Menu: <%= link_to :index, :action => "index" %>  <%= link_to :new, :action => "new" %>
+<%= link_to :edit, :action => "edit", :id => @post.id if @post %> <%= link_to :destroy, :action => "destroy", :id => @post.id if @post %>
+
+<%= yield %>
+
+</body>

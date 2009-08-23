@@ -1,0 +1,9 @@
+<% admin_fields = true if form_action == :update %>
+
+<% form_for :post, post, :url => {:action => form_action} do |f| %>
+  <%= f.hidden_field :post_id %>
+  header: <%= f.text_field :header %><br />
+  body: <%= f.text_area :body %><br />
+  <%= submit_tag "Post"  %>
+  <%= link_to "Delete", {:action => "destroy", :id => @post.id} if admin_fields %>
+<% end %>

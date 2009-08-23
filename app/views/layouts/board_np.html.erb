@@ -1,0 +1,17 @@
+<head>
+<%= stylesheet_link_tag "board_np" %>
+<%= yield :head %>
+</head>
+<body>
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1 BGCOLOR=#dfdfdf width=100%><TR><TD class=cs align=center><A HREF="?form" STYLE="text-decoration:underline;">Новое сообщение</A>&nbsp;&nbsp;<A HREF="?search=form" STYLE="text-decoration:underline;">Поиск</A>&nbsp;&nbsp;<A HREF="?configure=form" STYLE="text-decoration:underline;">Настройки</A>&nbsp;&nbsp;<A HREF="?resetnew" STYLE="text-decoration:underline;">Сбросить +</A>&nbsp;&nbsp;<A HREF="?rules" STYLE="text-decoration:underline;">Правила</A>&nbsp;&nbsp;<A HREF="?read=7002" STYLE="text-decoration:underline;"><FONT COLOR=RED><BOLD>Приват(7002)</BOLD></FONT></A></TD></TR></TABLE><TABLE BORDER=0 CELLSPACING=0 CELLPADDING=1 BGCOLOR=#dfdfdf width=100%><TR><TD class=cs align=center><TR><TD class=cl>&nbsp;</TD></TR></TD></TR></TABLE><table class=cl><tr><td><font class=cl> <B>Вход:</B> </font>нет входа<BR><span id="new_count">новых сообщений нет, всего 99030</span>, показаны последние 100 потоков</td><td align=right class=cl> <BR>Выберите тему: <SELECT CLASS=CL onchange="if (this.options[this.selectedIndex].value == '') this.selectedIndex=0;else window.open(this.options[this.selectedIndex].value,'_top')"><OPTION VALUE="?index=0" SELECTED>ваши текущие темы</OPTION><OPTION VALUE="?index=all">все темы</OPTION><OPTION VALUE="?index=1">без темы</OPTION>
+<OPTION VALUE="?index=2">Кто здесь?</OPTION>
+</SELECT></font></td></tr></table></FORM>
+
+Menu: <%= link_to :index, :action => "index" %>  <%= link_to :new, :action => "new" %>
+<%= link_to :edit, :action => "edit", :id => @post.id if @post %> <%= link_to :destroy, :action => "destroy", :id => @post.id if @post %>
+
+<%= yield %>
+
+<script>function update_counter(id, value){if (document.getElementById){el = document.getElementById(id);if(document.all) el.innerHTML = value;else{rng = document.createRange();rng.setStartBefore(el);htmlFrag = rng.createContextualFragment(value);while (el.hasChildNodes()) el.removeChild(el.lastChild);el.appendChild(htmlFrag);}}}</script><script>update_counter('new_count','новых сообщений нет, всего 99030');</script></P><div style="text-align: right; width: 100%;"><SMALL>Форум живет сам по себе. родился из <A STYLE="text-decoration:underline;" href="http://2ka.mipt.ru/~www/" TARGET="_blank">wwwconf</A>.</SMALL></P></CENTER>
+</body>

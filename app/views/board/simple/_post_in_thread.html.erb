@@ -1,0 +1,8 @@
+<div>
+<%= link_to post.header, :action => "show", :id => post.id %> <FONT COLOR=BLACK>(<%= post.host.ip if post.host %>) - <%= post.created_at %></FONT>
+
+<% post.posts.each do |child_post| %>
+<%= render :partial => "board/simple/post_in_thread", :locals => {:post => child_post} %>
+<% end %>
+</div>
+
